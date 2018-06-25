@@ -1,17 +1,19 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Search from './Search';
 
 function Header() {
-  let headerStyles = {
-    backgroundColor: 'hotpink',
-    color: 'snow',
-    fontFamily: 'monospace',
-    fontSize: '2em',
-    padding: '30px',
-    textAlign: 'center'
+  let headerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    borderBottom: '1px solid lightgray',
+    fontFamily: 'sans-serif',
+    color: 'gray',
   }
   return (
-    <div style={headerStyles}>
-      <h1>Help Queue</h1>
+    <div style={headerStyle}>
+      <Navbar />
+      <Search />
     </div>
   );
 }
